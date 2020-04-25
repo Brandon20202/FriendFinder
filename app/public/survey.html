@@ -236,7 +236,7 @@
                     scores: scores
                 };
                 console.log(newFriend);
-                $.post(currentURL + "/api/friends", newFriend, function (data) {
+                $(this).post(currentURL + "/api/friends", newFriend, function (data) {
                     console.log("Best match is: " + data.name);
 
                     $("#matchName").text(data.name);
